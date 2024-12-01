@@ -1,12 +1,12 @@
 package llm_models
 
 import (
-	"github.com/init-stuff/init/models"
+	"github.com/init-stuff/init/util"
 	"github.com/openai/openai-go"
 )
 
 var (
-	modifyCodeResponseSchema = models.GenerateSchema[ModifyCode]()
+	modifyCodeResponseSchema = util.GenerateSchema[ModifyCode]()
 
 	ModifyCodeResponseSchemaParam = openai.ResponseFormatJSONSchemaJSONSchemaParam{
 		Name:        openai.F("code"),

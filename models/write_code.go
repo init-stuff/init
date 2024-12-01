@@ -1,4 +1,4 @@
-package llm_models
+package models
 
 import (
 	"github.com/init-stuff/init/util"

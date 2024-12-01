@@ -10,7 +10,7 @@ var (
 
 	CodeResponseSchemaParam = openai.ResponseFormatJSONSchemaJSONSchemaParam{
 		Name:        openai.F("code"),
-		Description: openai.F("The code to run."),
+		Description: openai.F("The code that satisfies the user's request."),
 		Schema:      openai.F(codeResponseSchema),
 		Strict:      openai.F(true),
 	}
